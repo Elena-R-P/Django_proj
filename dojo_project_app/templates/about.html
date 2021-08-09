@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ clock.super }} - Home
+{% endblock title %}
+
+{% block content %}
+    <form action="/success" method="post">
+        {% csrf_token %}
+        <div>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input name="name" type="text" class="form-control" id="name">
+            </div>
+            <div class="mb-3">
+                <label for="comment" class="form-label">Comment</label>
+                <textarea name="comment" class="form-control" id="comment"></textarea>
+            </div>
+            <div class="mb-3">
+                <button type='submit'>SUBMIT</button>
+            </div>
+            
+        </div>
+    </form>
+
+{% endblock content %}

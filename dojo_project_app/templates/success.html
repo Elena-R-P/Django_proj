@@ -1,0 +1,22 @@
+{% extends 'base.html' %} 
+
+{% block title %} 
+
+{{ clock.super }} - Success
+
+{% endblock title %} 
+
+
+{% block content %} 
+
+{% load static %}
+<img src="{% static 'images/cat.jpg' %}" alt="cat" />
+<div class="card">
+    <div class="card-header">Results</div>
+    <div class="card-body">
+        <h5 class="card-title">Here's the ftuff</h5>
+        <p class="card-text">the name: {{ name }}</p>
+        <p class="card-text">{{ comment }}</p>
+    </div>
+</div>
+{% endblock content %}

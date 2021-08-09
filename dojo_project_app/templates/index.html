@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ clock.super }} - Home
+{% endblock title %}
+
+{% block content %}
+{% load static %}
+<h1>It's here:</h1>
+
+<img src="{% static 'images/cat.jpg' %}" alt="cat">
+<p>Would you like to visit <a href="/about">about us </a>section?</p>
+
+
+
+
+{% endblock content %}

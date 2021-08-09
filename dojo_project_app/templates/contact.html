@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ clock.super }} - Contact
+{% endblock title %}
+
+{% block content %}
+
+
+
+<h1>It's here:</h1>
+<p>Would you like to visit <a href="/about">about us </a>section?</p>
+<ul class="list-group">
+    {% for member in staff reversed %}
+    <li class="list-group-item">{{ member }}</li>
+    {% endfor %}
+</ul>
+
+
+{% endblock content %}
